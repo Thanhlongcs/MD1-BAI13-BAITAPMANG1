@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star</title>
+</head>
+<body>
+<script>
+  let input = prompt("Nhập vào tên ngôi sao: ")
+  let ngoisao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+  let chomsao = ['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo']
+  let i = 0;
+
+  function Search () {
+    for (i = 0; i < ngoisao.length; i++) {
+      if(ngoisao[i].toLowerCase() == input.toLowerCase()) {
+        return 'Chòm sao tương ứng là: ' + chomsao[i]
+      }
+    }
+    return "Không có ngôi sao tương ứng nào trong dãy"
+  }
+
+  console.log(Search())
+</script>
+</body>
+</html>
